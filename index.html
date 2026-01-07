@@ -4,39 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
     <title>portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="stlye.css">
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <div class="container fixed-top">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
-                    class="bi me-2" width="40" height="32" aria-hidden="true">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> <span class="fs-4"><img src="./images/myself.jpg.jpeg" class="rounded-circle" height="40px"
-                        width="40px"> Tamilvanan</span> </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Platform</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    <!-- navigation bar -->
+    <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav>
+            <ul class="nav-content">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </header>
-    </div>
+        </nav>
+    </header>
 
+    <!-- home section -->
+    <section id="home">
+        <div class="home-content">
+            <h3>Hi,Myself</h3>
+            <h1>Tamilvanan</h1>
+            <h3>and I'm a <span class="typing"></span></h3>
+            <p>I am a developer with a strong problem-solving mindset, focused on building
+               practical solutions and growing through continuous learning.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="home-btn">
+                <a href="./cv/TamilvananResume.pdf">Download CV</a>
+                <a href="#contact">content me</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="./images/myself-1.jpg.jpeg" alt="Profile Image">
+        </div>
+    </section>
+    
+     <!-- about section -->
+     <section id="about" class="about-section">
+        <div class="about-card">
+            <h2>About Me</h2>
 
+            <p class="about-text">
+                I am an enthusiastic learner who enjoys turning ideas into functional and
+                user-friendly web applications. I focus on writing clean code and improving
+                my problem-solving skills through regular coding practice. I am eager to
+                learn, grow, and contribute to real-world projects while continuously
+            upgrading my technical knowledge.
+            </p>
 
-    <!-- home -->
-     <section id="home" class="container">
-        <div class="container col-xxl-8 px-4 py-5"> <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> <div class="col-10 col-sm-8 col-lg-6"> <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> </div> <div class="col-lg-6"> <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1> <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="3hzci">Primary</button> <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="1kfze">Default</button> </div> </div> </div> </div>
+            <div class="about-tags">
+            <span>Web Development</span>
+            <span>Problem Solving</span>
+            <span>Clean Code</span>
+            <span>Continuous Learning</span>
+            </div>
+        </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <!-- projects section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-wrapper">
+
+            <div class="project-card card-left">
+            <h3>Responsive Portfolio Website</h3>
+            <p>
+                Designed and developed a responsive portfolio as part of continuous learning.
+                Focused on clean layout, structured CSS, and mobile-friendly design principles.
+            </p>
+            </div>
+
+            <div class="project-card card-right">
+            <h3>Interactive UI Components</h3>
+            <p>
+                Built reusable UI components such as navigation menus, forms, and cards.
+                Emphasized accessibility, smooth interactions, and modern UI practices.
+            </p>
+            </div>
+
+        </div>
+
+        <div class="project-card card-center">
+            <h3>Problem Solving Practice</h3>
+            <p>
+            Practiced algorithmic problem solving to improve logical thinking,
+            code optimization, and consistency in writing clean solutions.
+            </p>
+        </div>
+
+    </section>
+
+     <!-- contact section -->
+    <section id="contact">
+        <div class="contact-card">
+
+            <!-- LEFT CONTENT -->
+            <div class="contact-info">
+            <h2>Contact</h2>
+            <p class="contact-sub">
+                Focused on gaining real-world experience through collaboration and internships.
+                Always open to discussions that help me learn and improve as a developer.
+            </p>
+
+            <div class="contact-details">
+                <p><span>Email:</span> tamilvanan8643@gmail.com</p>
+                <p><span>Location:</span> Coimbatore, Tamil Nadu, India</p>
+                <p><span>LinkedIn:</span> linkedin.com/in/Tamil vanan</p>
+                <p><span>GitHub:</span> github.com/tamilvanan-m</p>
+            </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+     
+     <!-- external js -->
+     <script src="script.js"></script>
 </body>
 
 </html>
