@@ -1,3 +1,13 @@
+// toggle nav menu
+
+  const menuIcon = document.getElementById("menu-icon");
+  const nav = document.querySelector("nav");
+
+  menuIcon.onclick = () => {
+    nav.classList.toggle("active");
+  };
+
+
 // highlight active nav link on scroll
 
 document.addEventListener("DOMContentLoaded", () => {

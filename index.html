@@ -55,56 +55,123 @@
     
      <!-- about section -->
      <section id="about" class="about-section">
+      <div class="about-wrapper">
+
+        <!-- ABOUT CARD -->
         <div class="about-card">
-            <h2>About Me</h2>
+        <h2>About Me</h2>
 
-            <p class="about-text">
-                I am an enthusiastic learner who enjoys turning ideas into functional and
-                user-friendly web applications. I focus on writing clean code and improving
-                my problem-solving skills through regular coding practice. I am eager to
-                learn, grow, and contribute to real-world projects while continuously
+        <p class="about-text">
+            I am an enthusiastic learner who enjoys turning ideas into functional and
+            user-friendly web applications. I focus on writing clean code and improving
+            my problem-solving skills through regular coding practice. I am eager to
+            learn, grow, and contribute to real-world projects while continuously
             upgrading my technical knowledge.
-            </p>
-
-            <div class="about-tags">
-            <span>Web Development</span>
-            <span>Problem Solving</span>
-            <span>Clean Code</span>
-            <span>Continuous Learning</span>
-            </div>
+        </p>
         </div>
+
+        <!-- SKILLS SECTION -->
+        <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Languages & Backend</h3>
+            <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Maven</li>
+            <li>Problem Solving (C, C++)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsive Design</li>
+            <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tools & Workflow</h3>
+            <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Clean Code Practices</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Certifications & CP</h3>
+            <ul>
+            <li>NPTEL - Java Programming</li>
+             <li>CiSCO-Python Essential</li>
+            <li>LeetCode-max rating 1428<br>60+ problems</li>
+            <li>CodeChef-max rating 1180<br>380+ problems</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
     </section>
 
-     <!-- projects section -->
-    <section id="projects">
+
+<!-- projects section -->
+    <section id="projects" class="projects">
         <h2>Projects</h2>
 
+        <!-- TOP PROJECTS -->
         <div class="project-wrapper">
 
-            <div class="project-card card-left">
-            <h3>Responsive Portfolio Website</h3>
+            <div class="project-card card-left show">
+            <h3>To-Do Application</h3>
             <p>
-                Designed and developed a responsive portfolio as part of continuous learning.
-                Focused on clean layout, structured CSS, and mobile-friendly design principles.
+                A Java-based task management application that supports full CRUD operations
+                with a focus on clean architecture and modular design. Built using Maven to
+                manage dependencies, the project emphasizes code maintainability, logical
+                structure, and efficient task handling.
             </p>
+
+
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>Maven</span>
+                <span>OOP</span>
+            </div>
             </div>
 
-            <div class="project-card card-right">
-            <h3>Interactive UI Components</h3>
+            <div class="project-card card-right show">
+            <h3>E-Kart (E-Commerce Backend)</h3>
             <p>
-                Built reusable UI components such as navigation menus, forms, and cards.
-                Emphasized accessibility, smooth interactions, and modern UI practices.
+                A Spring Boot–based RESTful backend application designed to manage products,
+                users, and orders with secure API communication. The project focuses on
+                structured architecture, REST principles, and scalable backend development.
             </p>
+
+
+            <div class="tech-stack">
+                <span>Spring Boot</span>
+                <span>Java</span>
+                <span>REST API</span>
+                <span>MySQL</span>
+            </div>
             </div>
 
         </div>
 
-        <div class="project-card card-center">
-            <h3>Problem Solving Practice</h3>
+        <!-- BOTTOM UPCOMING -->
+        <div class="project-card card-center upcoming show">
+            <div class="lock-icon">
+            <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <h3>Future Project</h3>
             <p>
-            Practiced algorithmic problem solving to improve logical thinking,
-            code optimization, and consistency in writing clean solutions.
-            </p>
+              A conceptual project space reserved for exploring new ideas, experiments,
+             and future technical implementations.
+             </p>
+            <span class="upcoming-badge">Upcoming</span>
         </div>
 
     </section>
